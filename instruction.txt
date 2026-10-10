@@ -1,0 +1,35 @@
+Now the video creation flow is working.
+it's time for enhancements of the video content quality
+right now random images are generated and if it is a longer video then images are being repeated after a few seconds
+to fix this we need to try the following approach-
+
+I have a script for a video. I want to enhance the video quality by breaking the script into smaller segments.
+Guidelines:
+Each segment should contain 1-3 sentences.
+Consider the flow and meaning of the sentences when creating segments.
+Avoid breaking sentences in the middle of a thought.
+If possible, group related ideas within a single segment.
+Example:
+Original Script: "The quick brown fox jumps over the lazy dog. It was a beautiful sunny day."
+Segmented Script:"The quick brown fox jumps over the lazy dog."
+"It was a beautiful sunny day."
+Please provide the segmented script in a JSON format with the following structure:
+JSON
+[
+    {"segment": "The quick brown fox jumps over the lazy dog."},
+    {"segment": "It was a beautiful sunny day."}
+]
+Original Script: [Insert your full video script here]
+Please provide the segmented script in the JSON format as described above.
+
+
+Key Improvements:
+Clear Instructions: The prompt explicitly states the desired outcome (breaking the script into segments) and provides specific guidelines for segmenting.
+Example: The example demonstrates the expected output format (JSON) and provides a clear illustration of how the script should be segmented.
+Focus on Meaning: The prompt encourages Gemini to consider the flow and meaning of the sentences when creating segments, ensuring that the resulting segments are coherent and meaningful.
+Flexibility: The prompt allows for flexibility in segment length (1-3 sentences) while guiding Gemini to avoid arbitrary breaks.
+By using this prompt, you can effectively leverage Gemini's capabilities to break down your video script into manageable segments, which will significantly improve the quality of your generated videos by enabling more accurate image selection and better synchronization.
+Further Enhancements (Optional):
+Add a "background_description" key: If you want to include background descriptions for each segment, modify the JSON structure and the prompt accordingly.
+Provide context: If your script has a particular style or tone, provide additional context to Gemini to ensure that the segmentation aligns with the overall video aesthetic.
+
